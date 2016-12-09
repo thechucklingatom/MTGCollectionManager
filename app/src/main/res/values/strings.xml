@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MTGCollectionManager</string>
+    <string name="title_activity_kotlin_test">KotlinTest</string>
 </resources>
