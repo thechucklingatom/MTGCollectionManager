@@ -34,8 +34,10 @@ dependencies {
     compile 'org.jetbrains.anko:anko-support-v4:0.9'
     compile 'org.jetbrains.anko:anko-appcompat-v7:0.9'
     compile 'com.android.support:design:25.0.1'
+    compile 'io.magicthegathering:javasdk:0.0.3'
     testCompile 'junit:junit:4.12'
 }
 repositories {
+    jcenter()
     mavenCentral()
 }
