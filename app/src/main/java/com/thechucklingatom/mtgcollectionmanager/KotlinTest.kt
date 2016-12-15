@@ -31,7 +31,7 @@ class KotlinTest : Activity() {
             }
         }
 
-        val cardAdapter: CardAdapter? = CardAdapter(this
+        val cardAdapter: CardAdapter? = CardAdapter(this)
 
         val tempView: ListView = findViewById(R.id.test_text_view) as ListView
 
