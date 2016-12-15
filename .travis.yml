@@ -16,10 +16,6 @@ before_install:
 
   install: true
 
-  script:
-    - ./gradlew -v
-    - ./gradlew clean build --stacktrace
-
   after_failure: true
 
 notifications:
