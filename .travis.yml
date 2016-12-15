@@ -18,8 +18,8 @@ before_install:
 
 script:
   - ./gradlew -v
-  - ./gradlew clean
-  - ./gradlew build
+  - ./gradlew clean --stacktrace
+  - ./gradlew build --stacktrace
 
 notifications:
   email: true
