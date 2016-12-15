@@ -18,6 +18,8 @@ install: true
 
 script:
   - ./gradlew -v
+  - ./gradlew clean
+  - ./gradlew build
 
 after_failure: true
 
