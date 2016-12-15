@@ -8,11 +8,6 @@ andoroid:
     - build-tools-23.0.1
     - android-23
 
-  licenses:
-    - 'android-sdk-preview-license-52d11cd2'
-    - 'android-sdk-license-.+'
-    - 'google-gdk-license-.+'
-
 before_install:
   - git submodule update --init --recursive
   - chmod u+x gradlew
