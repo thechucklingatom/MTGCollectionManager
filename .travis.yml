@@ -14,13 +14,13 @@ before_install:
   - git submodule update --init --recursive
   - chmod u+x gradlew
 
-  install: true
+install: true
 
-  script:
-    - ./gradlew -v
-    - ./gradlew clean build --stacktrace
+script:
+  - ./gradlew -v
+  - ./gradlew clean build --stacktrace
 
-  after_failure: true
+after_failure: true
 
 notifications:
   email: true
