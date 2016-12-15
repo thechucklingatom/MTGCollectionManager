@@ -1,6 +1,6 @@
 language: android
-jdk: oraclejdk8
 sudo: false
+jdk: oraclejdk8
 
 android:
   components:
@@ -9,18 +9,6 @@ android:
     - tools
     - build-tools-25.0.1
     - android-25
-  licenses:
-      - 'android-sdk-preview-license-52d11cd2'
-      - 'android-sdk-license-.+'
-      - 'google-gdk-license-.+'
-
-before_install:
-  - chmod u+x gradlew
-
-script:
-  - ./gradlew -v
-  - ./gradlew clean --stacktrace
-  - ./gradlew build --stacktrace
 
 notifications:
   email: true
