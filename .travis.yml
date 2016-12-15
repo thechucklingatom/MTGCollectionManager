@@ -10,5 +10,17 @@ andoroid:
   licenses:
    - android-sdk-license-.+
 
+before_install:
+  - git submodule update --init --recursive
+  - chmod u+x gradlew
+
+  install: true
+
+  script:
+    - ./gradlew -v
+    - ./gradlew clean build --stacktrace
+
+  after_failure: true
+
 notifications:
   email: true
