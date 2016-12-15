@@ -6,7 +6,7 @@ android {
     buildToolsVersion "24.0.0"
     defaultConfig {
         applicationId "com.thechucklingatom.mtgcollectionmanager"
-        minSdkVersion 16
+        minSdkVersion 23
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -29,11 +29,11 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'com.android.support:appcompat-v7:25.0.1'
-    compile 'org.jetbrains.anko:anko-sdk15:0.9'
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'org.jetbrains.anko:anko-sdk23:0.9'
     compile 'org.jetbrains.anko:anko-support-v4:0.9'
     compile 'org.jetbrains.anko:anko-appcompat-v7:0.9'
-    compile 'com.android.support:design:25.0.1'
+    compile 'com.android.support:design:25.1.0'
     compile 'io.magicthegathering:javasdk:0.0.3'
     testCompile 'junit:junit:4.12'
 }

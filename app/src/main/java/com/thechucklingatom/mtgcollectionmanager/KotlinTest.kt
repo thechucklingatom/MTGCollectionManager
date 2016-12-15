@@ -1,11 +1,10 @@
 package com.thechucklingatom.mtgcollectionmanager
 
 import android.app.Activity
-import android.graphics.Color
 import android.os.Bundle
 import android.widget.ListView
 import org.jetbrains.anko.appcompat.v7.toolbar
-import org.jetbrains.anko.backgroundResource
+import org.jetbrains.anko.backgroundColor
 import org.jetbrains.anko.listView
 import org.jetbrains.anko.verticalLayout
 
@@ -20,8 +19,8 @@ class KotlinTest : Activity() {
         verticalLayout {
 
             toolbar {
-                backgroundResource = R.color.colorPrimary
-                setTitleTextColor(Color.WHITE)
+                backgroundColor = resources.getColor(R.color.colorPrimary, null)
+                setTitleTextColor(resources.getColor(R.color.colorAccent, null))
                 title = "test bar"
             }
 

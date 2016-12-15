@@ -1,0 +1,7 @@
+language: android
+
+andoroid:
+  components:
+    - platform-tools
+    - tools
+    - android-23
