@@ -5,3 +5,17 @@ andoroid:
     - platform-tools
     - tools
     - android-23
+
+  licenses:
+   - android-sdk-license-.+
+
+  install: true
+
+  script:
+    - ./gradlew -v
+    - ./gradlew clean build --stacktrace
+
+  after_failure: true
+
+notifications:
+  email: true
