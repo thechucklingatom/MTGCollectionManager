@@ -13,7 +13,7 @@ import org.junit.Test
 class LifeCounterModelTests {
     @Test
     fun ModelSetup(){
-        var testModel : LifeCounterModel = LifeCounterModel()
+        val testModel : LifeCounterModel = LifeCounterModel()
 
         testModel.initializeLifeTotals(2, 20)
 
