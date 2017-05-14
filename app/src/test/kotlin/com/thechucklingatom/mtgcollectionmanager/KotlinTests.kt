@@ -1,6 +1,7 @@
 package com.thechucklingatom.mtgcollectionmanager
 
 import com.thechucklingatom.mtgcollectionmanager.Models.CardModel
+import io.magicthegathering.javasdk.resource.Card
 import junit.framework.Assert.assertTrue
 import org.junit.Test
 
@@ -20,5 +21,15 @@ class KotlinTests {
     fun CardModelDoesReturnCards(){
         val CardModel = CardModel()
         assertTrue(CardModel.getAllCards().isNotEmpty())
+    }
+
+    @Test
+    fun CardModelReturnsSet(){
+        val CardModel = CardModel()
+        val cardList : List<Card> = CardModel.getAllCards().filter { it.set == "LEA"}
+
+        assertTrue(!cardList.filter { it.name == "Fear" }.isEmpty())
+        assertTrue(cardList.filter { it.name == "Grapeshot" }.isEmpty())
+
     }
 }

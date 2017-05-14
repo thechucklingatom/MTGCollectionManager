@@ -33,12 +33,13 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile "org.jetbrains.kotlin:kotlin-stdlib:1.0.6"
-    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'org.jetbrains.anko:anko-sdk23:0.9'
     compile 'org.jetbrains.anko:anko-support-v4:0.9'
     compile 'org.jetbrains.anko:anko-appcompat-v7:0.9'
-    compile 'com.android.support:design:25.1.1'
-    compile 'io.magicthegathering:javasdk:0.0.6'
+    compile 'org.jetbrains.anko:anko-sqlite:0.9'
+    compile 'com.android.support:design:25.3.1'
+    compile 'io.magicthegathering:javasdk:0.0.7'
     testCompile 'junit:junit:4.12'
     testCompile "org.jetbrains.kotlin:kotlin-stdlib:1.0.6"
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:1.0.6"
