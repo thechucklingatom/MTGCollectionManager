@@ -2,7 +2,7 @@ package com.thechucklingatom.mtgcollectionmanager
 
 import com.thechucklingatom.mtgcollectionmanager.Models.CardModel
 import io.magicthegathering.javasdk.resource.Card
-import junit.framework.Assert.assertTrue
+import junit.framework.TestCase.assertTrue
 import org.junit.Test
 
 /**

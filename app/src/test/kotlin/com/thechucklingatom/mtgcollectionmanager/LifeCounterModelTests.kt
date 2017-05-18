@@ -1,7 +1,7 @@
 package com.thechucklingatom.mtgcollectionmanager
 
 import com.thechucklingatom.mtgcollectionmanager.Models.LifeCounterModel
-import junit.framework.Assert.assertTrue
+import junit.framework.TestCase.assertTrue
 import org.junit.Test
 
 /**
