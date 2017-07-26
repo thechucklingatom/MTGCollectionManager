@@ -16,13 +16,13 @@ class KotlinTests {
     fun firstTest() {
         assertTrue(true)
     }
-
+/*
     @Test
     fun CardModelDoesReturnCards(){
         val CardModel = CardModel()
         assertTrue(CardModel.getAllCards().isNotEmpty())
     }
-
+*/
     @Test
     fun CardModelReturnsSet(){
         val CardModel = CardModel()
