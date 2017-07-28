@@ -1,14 +1,21 @@
 package com.thechucklingatom.mtgcollectionmanager
 
 import android.app.Activity
+import android.arch.persistence.room.Room
 import android.os.Bundle
+import android.util.Log
 import android.widget.ListView
+import com.thechucklingatom.mtgcollectionmanager.Room.MtgDatabase
 import org.jetbrains.anko.appcompat.v7.toolbar
 import org.jetbrains.anko.backgroundColor
 import org.jetbrains.anko.listView
 import org.jetbrains.anko.verticalLayout
 
 class KotlinTest : Activity() {
+
+    companion object {
+        var database: MtgDatabase? = null
+    }
 
     val arr = Array(5, Int::toString)
 
@@ -39,6 +46,14 @@ class KotlinTest : Activity() {
 
         cardAdapter?.notifyDataSetChanged()
 
+        Log.i("BeforeDb", getDatabasePath("mtgDatabase").toString())
+
+        database = Room.databaseBuilder(this,
+                MtgDatabase::class.java,
+                "mtgDatabase")
+                .build()
+
+        Log.i("BeforeDb", getDatabasePath("mtgDatabase").toString())
     }
 
 }
