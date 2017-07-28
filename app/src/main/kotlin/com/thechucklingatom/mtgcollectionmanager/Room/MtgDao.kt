@@ -12,10 +12,10 @@ interface MtgDao {
     @Query("SELECT * FROM card")
     fun getAllCards() : List<DatabaseMtgCard>
 
-    @Query("SELECT * FROM set")
+    @Query("SELECT * FROM MtgSet")
     fun getAllSets() : List<DatabaseMtgSet>
 
-    @Query("SELECT * FROM card WHERE name like (name)")
+    @Query("SELECT * FROM card WHERE name LIKE :arg0")
     fun getCardByPartialName(name: String) : List<DatabaseMtgCard>
 
     @Insert

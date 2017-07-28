@@ -9,7 +9,7 @@ import android.arch.persistence.room.RoomDatabase
 /**
  * Created by thechucklingatom on 7/26/17.
  */
-@Database(entities = arrayOf(DatabaseMtgSet::class, DatabaseMtgCard::class), version = 1)
+@Database(entities = arrayOf(DatabaseMtgSet::class, DatabaseMtgCard::class), version = 1, exportSchema = false)
 abstract class MtgDatabase : RoomDatabase() {
     abstract fun mtgDao() : MtgDao
 }

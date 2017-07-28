@@ -9,5 +9,5 @@ import android.arch.persistence.room.PrimaryKey
 @Entity(tableName = "Card")
 data class DatabaseMtgCard(
     @PrimaryKey(autoGenerate = true)
-    val id: Long = 0,
-    val name: String = "")
+    var id: Long = 0,
+    var name: String = "")
