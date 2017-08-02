@@ -11,5 +11,6 @@ import android.arch.persistence.room.RoomDatabase
  */
 @Database(entities = arrayOf(DatabaseMtgSet::class, DatabaseMtgCard::class), version = 1, exportSchema = false)
 abstract class MtgDatabase : RoomDatabase() {
-    abstract fun mtgDao() : MtgDao
+    abstract fun setDao() : SetDao
+    abstract fun cardDao() : CardDao
 }
