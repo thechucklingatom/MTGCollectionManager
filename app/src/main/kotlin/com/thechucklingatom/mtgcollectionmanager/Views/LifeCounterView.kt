@@ -1,5 +1,8 @@
 package com.thechucklingatom.mtgcollectionmanager.Views
 
+import com.thechucklingatom.mtgcollectionmanager.Presenters.BasePresenter
+import com.thechucklingatom.mtgcollectionmanager.Presenters.LifeCounterPresenter
+
 /**
  * Created by thechucklingatom on 5/14/2017.
  * @author thechucklingatom
@@ -7,9 +10,11 @@ package com.thechucklingatom.mtgcollectionmanager.Views
  * View for the life counter part of the app.
  */
 
-class LifeCounterView<T> : BaseView<T>{
+open class LifeCounterView<in T> : BaseView<T>{
+    var presenter : LifeCounterPresenter? = null
+
     override fun setPresenter(presenter: T) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        this.presenter = presenter as LifeCounterPresenter
     }
 
 }
